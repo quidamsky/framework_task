@@ -32,4 +32,8 @@ Feature: Smoke
         | https://www.asos.com/ |
 
       Scenario Outline: Check the Sign in page functions
-        Given User opens
+        Given User opens '<signInPage>'
+        And User checks email and password fields visibility
+        And User checks 'Sign In' button visibility
+        When
+
